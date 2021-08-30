@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Harmonizer",
+	"version": "0.3",
+	"description": "Harmonizes webpages",
+
+	"content_scripts": [
+		{
+		"matches": ["http://*/*","https://*/*"],
+		"js": ["harmonizer.js"]
+		}
+	]
+}	
