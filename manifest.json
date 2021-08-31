@@ -4,10 +4,13 @@
 	"version": "0.3",
 	"description": "Harmonizes webpages",
 
-	"content_scripts": [
-		{
-		"matches": ["http://*/*","https://*/*"],
-		"js": ["harmonizer.js"]
-		}
-	]
+	"permissions": [
+		"<all_urls>"
+	],
+	"browser_action": {
+		"default_title": "Harmonizer"
+	},
+	"background": {
+		"scripts": ["daemon.js"]
+	}
 }	
