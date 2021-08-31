@@ -9,6 +9,7 @@ function fire(state,script){
 		if(script != null){
 			script.then((script)=>script.unregister());
 		}
+		return null;
 	}
 }
 function main(){
