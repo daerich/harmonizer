@@ -8,7 +8,7 @@ for(let ind = 0;ind < taglist.length;ind++){
 		let itm = elem.item(ind);
 		let newStr = itm.innerText.replaceAll(matchpunc,"");
 		newStr = newStr.replaceAll(andreg,"$1");
-		itm.innerHTML = newStr;
+		itm.innerText = newStr;
 		}
 }
 }
